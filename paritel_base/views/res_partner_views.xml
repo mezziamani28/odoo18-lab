@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_prospect" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.prospect</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="statut_client"/>
+                <field name="vivier_id" readonly="1"/>
+                <field name="siret" invisible="(not is_company and not parent_is_company)"/>
+                <field
+                        name="siren"
+                        readonly="parent_id != False"
+                        invisible="(not is_company and not parent_is_company)"
+                />
+                <field
+                        name="nic"
+                        invisible="(not is_company and not parent_is_company)"
+                />
+                <field name="parent_is_company" invisible="1"/>
+            </xpath>
+            <xpath
+                    expr="//field[@name='child_ids']/form//field[@name='comment']"
+                    position="before"
+            >
+                <field
+                        name="nic"
+                        invisible="type in ('contact', 'private')"
+                />
+                <field
+                        name="siret"
+                        invisible="type in ('contact', 'private')"
+                        readonly="1"
+                />
+            </xpath>
+            <xpath
+                    expr="//page[@name='contact_addresses']"
+                    position="after"
+            >
+                <page string="Qualification" name="qualification" autofocus="autofocus">
+                    <group>
+                    </group>
+                    <field name="qualification_ids"
+                           context="{'default_partner_id': id}"
+                           mode="list,form"/>
+                </page>
+            </xpath>
+            <div name="warning_tax" position="after">
+                <div
+                        class="alert alert-warning"
+                        role="alert"
+                        name="warn_duplicate_siren"
+                        invisible="not same_siren_partner_id"
+                >
+                    Duplicate warning: partner
+                    <field
+                            name="same_siren_partner_id"
+                    />
+                    has the same <b>SIREN</b>.
+                </div>
+            </div>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter" model="ir.ui.view">
+        <field name="name">view.res.partner.filter.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <filter name="salesperson" position="before">
+                <filter string="Statut du Compte" name="statut_client_filter"
+                        context="{'group_by': 'statut_client'}"/>
+            </filter>
+        </field>
+    </record>
+
+    <record id="contacts.action_contacts" model="ir.actions.act_window">
+        <field name="context">{'default_is_company': True,'search_default_statut_client_filter': 1}</field>
+        <field name="name">Compte</field>
+    </record>
+    <record id="action_contacts_statut_client" model="ir.actions.act_window">
+        <field name="name">Compte</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,tree,form,activity</field>
+        <field name="search_view_id" ref="base.view_res_partner_filter"/>
+        <field name="context">{}</field>
+        <field name="domain">[('statut_client', '=', 'froid')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a Contact in your address book
+            </p>
+            <p>
+                Odoo helps you track all activities related to your contacts.
+            </p>
+        </field>
+    </record>
+    <record id="crm.crm_menu_root" model="ir.ui.menu">
+        <field name="sequence">2</field>
+    </record>
+    <record id="calendar.mail_menu_calendar" model="ir.ui.menu">
+        <field name="sequence">3</field>
+    </record>
+    <record id="contacts.menu_contacts" model="ir.ui.menu">
+        <field name="name">Compte</field>
+        <field name="sequence">4</field>
+    </record>
+    <record id="contacts.res_partner_menu_contacts" model="ir.ui.menu">
+        <field name="name">Compte</field>
+    </record>
+    <record id="mail.menu_root_discuss" model="ir.ui.menu">
+        <field name="sequence">11</field>
+    </record>
+
+</odoo>

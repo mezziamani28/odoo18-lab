@@ -1,0 +1,647 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_siren
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-19 08:32+0000\n"
+"PO-Revision-Date: 2025-06-19 08:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_res_config_settings__import_file_path
+msgid " Chemin du fichier Stock Etablissement"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_res_config_settings__import_file_path_1
+msgid " Chemin du fichier Stock Unite Legale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__naf_label
+msgid "Activité"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__activitePrincipaleEtablissement
+msgid "Activité principale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__activitePrincipaleRegistreMetiersEtablissement
+msgid "Activité principale RM"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__activite_principale_unite_legale
+msgid "Activité principale unite legale"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.view_base_siren_form
+msgid "Adresse principale"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.view_base_siren_form
+msgid "Adresse secondaire"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields.selection,name:base_siren.selection__base_siren__statut_client__ancien
+msgid "Ancien Client"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__annee_categorie_entreprise
+msgid "Année catégorie entreprise"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__anneeEffectifsEtablissement
+msgid "Année des effectifs"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__annee_effectifs_unite_legale
+msgid "Année effectifs"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren_batch__data
+msgid "Batch JSON"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__caractere_employeur_unite_legale
+msgid "Caractère employeur"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__categorie_entreprise
+msgid "Catégorie entreprise"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__categorie_juridique_unite_legale
+msgid "Catégorie juridique"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields.selection,name:base_siren.selection__base_siren__statut_client__chaud
+msgid "Chaud"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.res_config_settings_siren_view
+msgid "Chemin du fichier Stock Etablissement"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.res_config_settings_siren_view
+msgid "Chemin du fichier Stock Unite Legale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields.selection,name:base_siren.selection__base_siren__statut_client__client
+msgid "Client"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codeCedexEtablissement
+msgid "Code Cedex"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codeCedex2Etablissement
+msgid "Code Cedex 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__naf_code
+msgid "Code NAF"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codeCommuneEtablissement
+msgid "Code commune"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codeCommune2Etablissement
+msgid "Code commune 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codePaysEtrangerEtablissement
+msgid "Code pays étranger"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codePaysEtranger2Etablissement
+msgid "Code pays étranger 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codePostalEtablissement
+msgid "Code postal"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__codePostal2Etablissement
+msgid "Code postal 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleCommuneEtablissement
+msgid "Commune"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleCommune2Etablissement
+msgid "Commune 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleCommuneEtrangerEtablissement
+msgid "Commune étrangère"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleCommuneEtranger2Etablissement
+msgid "Commune étrangère 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__complementAdresseEtablissement
+msgid "Complément adresse"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__complementAdresse2Etablissement
+msgid "Complément adresse 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model,name:base_siren.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__partner_id
+msgid "Contact"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__coordonneeLambertAbscisseEtablissement
+msgid "Coordonnée Lambert X"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__coordonneeLambertOrdonneeEtablissement
+msgid "Coordonnée Lambert Y"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__color
+msgid "Couleur"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren_batch__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren_batch__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__date_creation_unite_legale
+msgid "Date création"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__dateCreationEtablissement
+msgid "Date de création"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__dateDebut
+msgid "Date de début"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__dateDernierTraitementEtablissement
+msgid "Date dernier traitement"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__date_debut
+msgid "Date début"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__dernierNumeroVoieEtablissement
+msgid "Dernier N° voie"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__display_name
+#: model:ir.model.fields,field_description:base_siren.field_base_siren_batch__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__distributionSpecialeEtablissement
+msgid "Distribution spéciale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__distributionSpeciale2Etablissement
+msgid "Distribution spéciale 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__denomination_unite_legale
+msgid "Dénomination"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__denominationUsuelleEtablissement
+msgid "Dénomination usuelle"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__denomination_usuelle1_unite_legale
+msgid "Dénomination usuelle 1"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__denomination_usuelle2_unite_legale
+msgid "Dénomination usuelle 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__denomination_usuelle3_unite_legale
+msgid "Dénomination usuelle 3"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__economie_sociale_solidaire_unite_legale
+msgid "ESS"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__email
+msgid "Email"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__enseigne1Etablissement
+msgid "Enseigne 1"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__enseigne2Etablissement
+msgid "Enseigne 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__enseigne3Etablissement
+msgid "Enseigne 3"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.view_base_siren_form
+msgid "Etablissement"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields.selection,name:base_siren.selection__base_siren__sexe_unite_legale__2
+msgid "Femme"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields.selection,name:base_siren.selection__base_siren__statut_client__ferme
+msgid "Fermé"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.res_config_settings_siren_view
+msgid "Fichier SIRENE"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields.selection,name:base_siren.selection__base_siren__statut_client__froid
+msgid "Froid"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__hash_line
+msgid "Hash ligne"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields.selection,name:base_siren.selection__base_siren__sexe_unite_legale__1
+msgid "Homme"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__id
+#: model:ir.model.fields,field_description:base_siren.field_base_siren_batch__id
+msgid "ID"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__identifiant_association_unite_legale
+msgid "ID Association"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__identifiantAdresseEtablissement
+msgid "ID adresse"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.actions.server,name:base_siren.cron_import_sirene_ir_actions_server
+msgid "Import SIRENE Mensunel "
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__indiceRepetitionDernierNumeroVoieEtablissement
+msgid "Indice rép. dernier N° voie"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__indiceRepetitionEtablissement
+msgid "Indice répétition"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__indiceRepetition2Etablissement
+msgid "Indice répétition 2"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.res_config_settings_siren_view
+msgid "Lancer fusion CSV"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren_batch__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren_batch__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleCedexEtablissement
+msgid "Libellé Cedex"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleCedex2Etablissement
+msgid "Libellé Cedex 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleVoieEtablissement
+msgid "Libellé voie"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libelleVoie2Etablissement
+msgid "Libellé voie 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model,name:base_siren.model_base_siren_batch
+msgid "Lot d'import SIREN"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__nic
+msgid "NIC"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__nic_siege_unite_legale
+msgid "NIC siège"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__name
+msgid "Nom"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__nom_usage_unite_legale
+msgid "Nom d'usage"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__nom_unite_legale
+msgid "Nom unité légale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__nombrePeriodesEtablissement
+msgid "Nombre de périodes"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__nomenclatureActivitePrincipaleEtablissement
+msgid "Nomenclature activité principale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__numeroVoieEtablissement
+msgid "N° voie"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__numeroVoie2Etablissement
+msgid "N° voie 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libellePaysEtrangerEtablissement
+msgid "Pays étranger"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__libellePaysEtranger2Etablissement
+msgid "Pays étranger 2"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.view_base_siren_form
+msgid "Prospect"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.actions.act_window,name:base_siren.action_base_siren
+#: model:ir.ui.menu,name:base_siren.menu_base_siren
+#: model:ir.ui.menu,name:base_siren.menu_base_siren_root
+msgid "Prospects"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__prenom1_unite_legale
+msgid "Prénom 1"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__prenom2_unite_legale
+msgid "Prénom 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__prenom3_unite_legale
+msgid "Prénom 3"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__prenom4_unite_legale
+msgid "Prénom 4"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__prenom_usuel_unite_legale
+msgid "Prénom usuel"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__pseudonyme_unite_legale
+msgid "Pseudonyme"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__street
+msgid "Rue"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__siren
+msgid "SIREN"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.view_base_siren_tree
+msgid "SIRENE"
+msgstr ""
+
+#. module: base_siren
+#. odoo-python
+#: code:addons/base_siren/models/base_siren.py:0
+#, python-format
+msgid "SIRENE file not found."
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__siret
+msgid "SIRET"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__sexe_unite_legale
+msgid "Sexe"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__sigle_unite_legale
+msgid "Sigle"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__societe_mission_unite_legale
+msgid "Société à mission"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__statutDiffusionEtablissement
+msgid "Statut de diffusion"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__statut_diffusion_unite_legale
+msgid "Statut diffusion unité légale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__statut_client
+msgid "Statut du Prospect"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__trancheEffectifsEtablissement
+msgid "Tranche d’effectifs"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__tranche_effectifs_unite_legale
+msgid "Tranche effectifs"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__typeVoieEtablissement
+msgid "Type voie"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__typeVoie2Etablissement
+msgid "Type voie 2"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__phone
+msgid "Téléphone"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.res_config_settings_siren_view
+msgid "URL du fichier SIRET"
+msgstr ""
+
+#. module: base_siren
+#: model_terms:ir.ui.view,arch_db:base_siren.view_base_siren_form
+msgid "Unité légale"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__unite_purgee_unite_legale
+msgid "Unité purgée"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__city
+msgid "Ville"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model,name:base_siren.model_base_siren
+msgid "Établissement SIRENE"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__etablissementSiege
+msgid "Établissement siège"
+msgstr ""
+
+#. module: base_siren
+#: model:ir.model.fields,field_description:base_siren.field_base_siren__etatAdministratifEtablissement
+msgid "État administratif"
+msgstr ""

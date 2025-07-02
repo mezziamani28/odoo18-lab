@@ -1,0 +1,191 @@
+<odoo>
+    <record id="view_base_siren_form" model="ir.ui.view">
+        <field name="name">base.siren.form</field>
+        <field name="model">base.siren</field>
+        <field name="arch" type="xml">
+            <form string="Prospect">
+                <header>
+                    <button name="action_convert_to_partner"
+                            string="Transformer en Compte"
+                            type="object"
+                            class="btn-primary"
+                            invisible="partner_id"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <field name="image_1920" widget="image" class="oe_avatar"
+                           options="{&quot;preview_image&quot;: &quot;avatar_128&quot;}"/>
+                    <div class="oe_title mb24">
+                        <group>
+                            <field name="etablissementSiege" string="Est-ce le siège ?" invisible="siren_parent_id"/>
+                        </group>
+                        <h1>
+                            <field id="company" options="{'line_breaks': False}" widget="text" class="text-break"
+                                   name="nom_unite_legale" default_focus="1" placeholder="e.g. Lumber Inc"
+                            />
+                        </h1>
+                        <div class="o_row">
+                            <field name="partner_id" widget="res_partner_many2one"/>
+                        </div>
+                    </div>
+                    <group>
+                        <group>
+                            <span class="o_form_label o_td_label" name="address_name">
+                                <b>Address</b>
+                            </span>
+                            <div class="o_address_format">
+                                <field name="street" placeholder="Street..." class="o_address_street"/>
+                                <field name="codePostalEtablissement" placeholder="Code postal" class="o_address_zip"/>
+                                <field name="city" placeholder="Ville" class="o_address_city"/>
+                                <field name="state_id" class="o_address_state" placeholder="Departement"
+                                       options="{'no_open': True, 'no_quick_create': True}"
+                                       context="{'default_country_id': country_id}"/>
+
+                                <div name="partner_address_country" class="d-flex justify-content-between">
+                                    <field name="country_id" placeholder="Pays" class="o_address_country"
+                                           options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"
+                                    />
+                                </div>
+                            </div>
+                            <field name="siret"/>
+                            <field name="siren"/>
+                            <field name="nic"/>
+                        </group>
+                        <group>
+                            <field name="phone" widget="phone"/>
+                            <field name="email"/>
+                            <field name="statut_client"/>
+                            <field name="naf_code"/>
+                            <field name="naf_label"/>
+                            <field name="siren_parent_id" invisible="etablissementSiege" readonly="1" string="Siège"/>
+                            <field name="color" widget="color_picker"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Contacts &amp; Addresses" name="contact_addresses" autofocus="autofocus"
+                              invisible="not etablissementSiege">
+                            <field name="etablissements_secondaires_ids" mode="kanban"
+                                   context="{'default_siren_parent_id': id, 'default_siren': siren,'default_siret': siret, 'default_nic': nic, 'default_etablissementSiege': False, 'default_nom_unite_legale': nom_unite_legale,'default_country_id': country_id}">
+                                <kanban color="color">
+                                    <field name="color"/>
+                                    <field name="etablissementSiege"/>
+                                    <templates>
+                                        <t t-name="card" class="flex-row">
+                                            <main class="ps-2 ps-md-0">
+                                                <field name="nom_unite_legale" class="fw-bold"/>
+                                                <field name="email" widget="email"/>
+                                                <div>
+                                                    <div>
+                                                        <field class="me-1" name="zip"/>
+                                                        <field name="city"/>
+                                                    </div>
+                                                    <field name="country_id"/>
+                                                </div>
+                                                <div t-if="record.phone.raw_value">Phone:
+                                                    <field name="phone"/>
+                                                </div>
+                                                <div t-if="record.email.raw_value">email:
+                                                    <field name="email"/>
+                                                </div>
+                                            </main>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                                <kanban color="color">
+                                    <field name="color"/>
+                                    <field name="nom_unite_legale"/>
+                                    <field name="statut_client"/>
+                                    <templates>
+                                        <t t-name="card" class="flex-row">
+                                            <aside class="o_kanban_aside_full">
+                                                <field name="image_1920" class="o_kanban_image_fill w-100"
+                                                       widget="image" options="{'img_class': 'object-fit-cover'}"
+                                                       alt="Contact image"/>
+                                            </aside>
+                                            <main class="ps-2 ps-md-0">
+                                                <field name="nom_unite_legale" class="fw-bold"/>
+                                                <field name="siret"/>
+                                                <field name="email" widget="email"/>
+                                                <div>
+                                                    <div>
+                                                        <field class="me-1" name="zip"/>
+                                                        <field name="city"/>
+                                                    </div>
+                                                    <field class="me-1" name="state_id"/>
+                                                    <field name="country_id"/>
+                                                </div>
+                                                <div t-if="record.phone.raw_value">Phone:
+                                                    <field name="phone"/>
+                                                </div>
+                                                <div t-if="record.mobile.raw_value">Mobile:
+                                                    <field name="mobile"/>
+                                                </div>
+                                            </main>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field>
+
+                        </page>
+                        <page string="Qualification" name="qualification" autofocus="autofocus">
+                            <group>
+                            </group>
+                            <field name="qualification_ids"
+                                   context="{'default_vivier_id': id, 'default_partner_id': partner_id and partner_id.id or False}"
+                                   mode="list,form"/>
+                        </page>
+                        <page string="Geolocation" name="goeid_addresses" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="coordonneeLambertAbscisseEtablissement"/>
+                                    <field name="coordonneeLambertOrdonneeEtablissement"/>
+                                </group>
+
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter reload_on_attachment="True"/>
+
+            </form>
+        </field>
+    </record>
+    <record id="view_base_siren_tree" model="ir.ui.view">
+        <field name="name">base.siren.tree</field>
+        <field name="model">base.siren</field>
+        <field name="arch" type="xml">
+            <list string="SIRENE">
+                <field name="nom_unite_legale"/>
+                <field name="color" widget="color_picker"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_base_siren" model="ir.actions.act_window">
+        <field name="name">Vivier</field>
+        <field name="res_model">base.siren</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_base_siren_root" name="Vivier" sequence="4"
+              web_icon="paritel_base,static/description/crm.png"/>
+    <menuitem id="menu_base_siren" name="Vivier"
+              parent="menu_base_siren_root"
+              action="action_base_siren"/>
+    <record id="base.action_country_state" model="ir.actions.act_window">
+        <field name="domain" eval="[( 'country_id', '=', ref('base.fr') )]"/>
+    </record>
+    <menuitem id="base_siren_menu_config"
+              name="Configuration"
+              parent="menu_base_siren_root"
+              groups="base.group_system"
+              sequence="100"/>
+
+
+    <menuitem id="menu_country_state_partner"
+              action="base.action_country_state"
+              parent="paritel_base.base_siren_menu_config"
+              sequence="2"
+              name="Département"
+    />
+
+</odoo>

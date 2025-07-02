@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+paritel_base.access_base_siren,access_base_siren,paritel_base.model_base_siren,base.group_user,1,1,1,1
+paritel_base.access_base_siren_batch,access_base_siren_batch,paritel_base.model_base_siren_batch,base.group_user,1,1,1,1
+paritel_base.access_qualification,access_qualification,paritel_base.model_qualification,base.group_user,1,1,1,1
